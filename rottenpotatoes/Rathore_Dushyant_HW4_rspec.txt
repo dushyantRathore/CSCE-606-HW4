@@ -1,0 +1,20 @@
+/Users/dushyant.bgs/.rvm/rubies/ruby-2.6.6/bin/ruby -I/Users/dushyant.bgs/.rvm/gems/ruby-2.6.6/gems/rspec-core-3.7.1/lib:/Users/dushyant.bgs/.rvm/gems/ruby-2.6.6/gems/rspec-support-3.7.1/lib /Users/dushyant.bgs/.rvm/gems/ruby-2.6.6/gems/rspec-core-3.7.1/exe/rspec --pattern spec/\*\*\{,/\*/\*\*\}/\*_spec.rb
+F..........
+
+Failures:
+
+  1) MoviesController index Should display the index template
+     Failure/Error: expect(response).to redirect_to(movies_path)
+
+       Expected response to be a redirect to <http://test.host/movies> but was a redirect to <http://test.host/movies?>.
+       Expected "http://test.host/movies" to be === "http://test.host/movies?".
+     # ./spec/controller/movies_controller_spec.rb:23:in `block (3 levels) in <top (required)>'
+
+Finished in 0.14751 seconds (files took 2.3 seconds to load)
+11 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/controller/movies_controller_spec.rb:21 # MoviesController index Should display the index template
+
+Coverage report generated for Cucumber Features, RSpec to /Users/dushyant.bgs/Desktop/Development/Github/CSCE-606-HW4/rottenpotatoes/coverage. 51 / 51 LOC (100.0%) covered.
