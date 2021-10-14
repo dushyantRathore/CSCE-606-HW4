@@ -20,5 +20,3 @@ Scenario: add a new movie
   Then I press "Save Changes"
   Then I should be on the home page
   And  I should see "Interstellar"
-
-Scenario: Check if a number if odd
